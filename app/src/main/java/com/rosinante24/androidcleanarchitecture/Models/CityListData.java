@@ -10,28 +10,28 @@ public class CityListData {
 
     @SerializedName("id")
     @Expose
-    private String id;
-    @SerializedName("name")
+    private int id;
+    @SerializedName("title")
     @Expose
     private String name;
-    @SerializedName("description")
+    @SerializedName("created_at")
     @Expose
     private String description;
-    @SerializedName("background")
+    @SerializedName("url_image")
     @Expose
     private String background;
 
     /**
      * @return The id
      */
-    public String getId() {
+    public int getId() {
         return id;
     }
 
     /**
      * @param id The id
      */
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

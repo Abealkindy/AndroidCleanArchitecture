@@ -13,6 +13,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.rosinante24.androidcleanarchitecture.R;
 import com.rosinante24.androidcleanarchitecture.Models.CityListData;
 
+import java.text.ParseException;
 import java.util.List;
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
@@ -41,7 +42,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
         holder.tvCity.setText(data.get(position).getName());
         holder.tvDesc.setText(data.get(position).getDescription());
 
-        String images = data.get(position).getBackground();
+        String images = "http://entry.sandbox.gits.id/api/alamku/uploads/images/" + data.get(position).getBackground();
 
         Glide.with(context)
                 .load(images)
@@ -56,7 +57,6 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
     public int getItemCount() {
         return data.size();
     }
-
 
     public interface OnItemClickListener {
         void onClick(CityListData Item);

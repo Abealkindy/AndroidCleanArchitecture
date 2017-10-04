@@ -19,7 +19,7 @@ public class CityListResponse {
     private String message;
     @SerializedName("status")
     @Expose
-    private int status;
+    private boolean status;
 
     /**
      * @return The data
@@ -52,14 +52,14 @@ public class CityListResponse {
     /**
      * @return The status
      */
-    public int getStatus() {
+    public boolean getStatus() {
         return status;
     }
 
     /**
      * @param status The status
      */
-    public void setStatus(int status) {
+    public void setStatus(boolean status) {
         this.status = status;
     }
 
