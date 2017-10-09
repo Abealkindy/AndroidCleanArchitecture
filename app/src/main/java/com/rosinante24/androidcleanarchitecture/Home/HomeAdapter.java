@@ -40,9 +40,9 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
     public void onBindViewHolder(HomeAdapter.ViewHolder holder, int position) {
         holder.click(data.get(position), listener);
         holder.tvCity.setText(data.get(position).getName());
-        holder.tvDesc.setText(data.get(position).getDescription());
+        holder.tvDesc.setText("Popularity : " + data.get(position).getDescription());
 
-        String images = "http://entry.sandbox.gits.id/api/alamku/uploads/images/" + data.get(position).getBackground();
+        String images = "http://image.tmdb.org/t/p/w185" + data.get(position).getBackground();
 
         Glide.with(context)
                 .load(images)

@@ -11,15 +11,15 @@ import javax.annotation.Generated;
 @Generated("org.jsonschema2pojo")
 public class CityListResponse {
 
-    @SerializedName("data")
+    @SerializedName("results")
     @Expose
     private List<CityListData> data = new ArrayList<CityListData>();
-    @SerializedName("message")
-    @Expose
-    private String message;
-    @SerializedName("status")
-    @Expose
-    private boolean status;
+//    @SerializedName("message")
+//    @Expose
+//    private String message;
+//    @SerializedName("status")
+//    @Expose
+//    private boolean status;
 
     /**
      * @return The data
@@ -35,32 +35,32 @@ public class CityListResponse {
         this.data = data;
     }
 
-    /**
-     * @return The message
-     */
-    public String getMessage() {
-        return message;
-    }
-
-    /**
-     * @param message The message
-     */
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
-    /**
-     * @return The status
-     */
-    public boolean getStatus() {
-        return status;
-    }
-
-    /**
-     * @param status The status
-     */
-    public void setStatus(boolean status) {
-        this.status = status;
-    }
+//    /**
+//     * @return The message
+//     */
+//    public String getMessage() {
+//        return message;
+//    }
+//
+//    /**
+//     * @param message The message
+//     */
+//    public void setMessage(String message) {
+//        this.message = message;
+//    }
+//
+//    /**
+//     * @return The status
+//     */
+//    public boolean getStatus() {
+//        return status;
+//    }
+//
+//    /**
+//     * @param status The status
+//     */
+//    public void setStatus(boolean status) {
+//        this.status = status;
+//    }
 
 }

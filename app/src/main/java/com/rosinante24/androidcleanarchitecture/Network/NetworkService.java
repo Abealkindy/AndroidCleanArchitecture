@@ -9,9 +9,9 @@ import rx.Observable;
 
 public interface NetworkService {
 
-    @GET("get/filter/dataalam")
+    @GET("popular")
     Observable<CityListResponse> getCityList(
-            @Query("kategori") int kategori
+            @Query("api_key") String kategori
     );
 
 }

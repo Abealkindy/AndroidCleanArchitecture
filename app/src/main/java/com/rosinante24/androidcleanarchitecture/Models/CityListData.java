@@ -11,13 +11,16 @@ public class CityListData {
     @SerializedName("id")
     @Expose
     private int id;
+    @SerializedName("vote_count")
+    @Expose
+    private int vote_count;
     @SerializedName("title")
     @Expose
     private String name;
-    @SerializedName("created_at")
+    @SerializedName("popularity")
     @Expose
     private String description;
-    @SerializedName("url_image")
+    @SerializedName("poster_path")
     @Expose
     private String background;
 

@@ -19,7 +19,9 @@ public class Service {
 
     public Subscription getCityList(final GetCityListCallback callback) {
 
-        return networkService.getCityList(1)
+        return networkService.getCityList(
+                "1b0b39b7699af0ca010cd87d9e6de6c8"
+        )
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .onErrorResumeNext(new Func1<Throwable, Observable<? extends CityListResponse>>() {

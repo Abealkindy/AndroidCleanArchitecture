@@ -12,7 +12,7 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         buildConfigField "int", "LIMIT", "100"
-        buildConfigField "String", "BASEURL", "\"http://entry.sandbox.gits.id/api/alamku/index.php/api/\""
+        buildConfigField "String", "BASEURL", "\"https://api.themoviedb.org/3/movie/\""
         buildConfigField "int", "CACHETIME", "432000" // 5days
     }
     buildTypes {
